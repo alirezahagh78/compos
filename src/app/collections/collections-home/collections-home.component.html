@@ -1,0 +1,20 @@
+<app-divider>
+    Table Component
+</app-divider>
+<button (click)="changeFirstItem()">Change First Item</button>
+<app-table *ngFor="let item of data" [name]="item.name" [data]="item" [headers]="headers"></app-table>
+<app-divider>
+    Tab Component
+</app-divider>
+<app-tabs>
+    <a routerLink="../collections" routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact : true}" class="active item">
+        Bio
+    </a>
+    <a routerLink="companies" routerLinkActive="active" class="item">
+        Companies
+    </a>
+    <a routerLink="partners" routerLinkActive="active" class="item">
+        Partners
+    </a>
+</app-tabs>

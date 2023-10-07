@@ -1,0 +1,12 @@
+<div ng-click="onCloseClick()" class="ui dimmer visible active">
+    <div (click)="$event.stopPropagation()" class="ui modal visible active">
+        <i class="fas fa-close" (click)="onCloseClick()"></i>
+        <div class="header">Header</div>
+        <div class="content">
+            content
+        </div>
+        <div class="actions actions-default">
+            <button class="ui button" (click)="onCloseClick()">ok</button>
+        </div>
+    </div>
+</div>
